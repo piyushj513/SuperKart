@@ -1,0 +1,11 @@
+.checkout-form {
+  box-shadow: 2px 5px 5px 5px lightblue;
+  margin: auto;
+  margin-top: 30px;
+  padding: 2%;
+  max-width: 50%;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

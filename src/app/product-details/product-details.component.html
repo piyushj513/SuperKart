@@ -1,0 +1,27 @@
+<div class="product-list">
+  <mat-card class="product-card">
+    <mat-card-header>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <img
+      class="img"
+      src="{{ product.src }}"
+      alt="Photo of a Shiba Inu"
+      width="300px"
+    />
+    <mat-card-content>
+      <p>{{ product.desc }}</p>
+    </mat-card-content>
+    <mat-card-content>
+      <p>{{product.descFull}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary">
+        Price: {{ product.price | currency }}
+      </button>
+      <button mat-button color="primary" (click)="addToCart(product)">
+        Add To Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

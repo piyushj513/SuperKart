@@ -1,0 +1,74 @@
+<div class="checkout-container">
+  <form ngNativeValidate class="checkout-form">
+    <h2 class="mat-h2">Checkout</h2>
+    <mat-form-field class="field">
+      <input
+        matInput
+        placeholder="Full Name"
+        required
+        [(ngModel)]="fullName"
+        name="fullName"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Address"
+        required
+        [(ngModel)]="address"
+        name="address"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="City"
+        required
+        [(ngModel)]="city"
+        name="city"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="State"
+        required
+        [(ngModel)]="state"
+        name="state"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Zip Code"
+        required
+        [(ngModel)]="zipCode"
+        name="zipCode"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Card Number"
+        required
+        [(ngModel)]="cardNumber"
+        name="cardNumber"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Expiry Date"
+        required
+        [(ngModel)]="expiryDate"
+        name="expiryDate"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="CVV" required [(ngModel)]="cvv" name="cvv" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="placeOrder()">
+      Place Order
+    </button>
+  </form>
+</div>

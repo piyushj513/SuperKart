@@ -1,0 +1,21 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/457/130/original/online-shopping-isometric-illustration-modern-flat-design-style-for-website-and-mobile-website-vector-illustration.jpg");
+}
+
+.login-card {
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px lightblue;
+}
+
+.google-icon {
+  margin-right: 8px;
+}
