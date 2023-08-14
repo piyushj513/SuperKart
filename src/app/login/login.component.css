@@ -1,6 +1,6 @@
 .login-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   height: 100vh;
   width: 100%;
@@ -10,12 +10,14 @@
 
 .login-card {
   align-items: center;
-  background-color: white;
-  width: 300px;
+  margin-left: 100px;
+  width: 200px;
   padding: 20px;
-  box-shadow: 2px 2px 2px 2px lightblue;
 }
 
 .google-icon {
   margin-right: 8px;
+}
+.btn {
+  width: 200px;
 }

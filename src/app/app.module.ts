@@ -21,11 +21,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { LoginComponent } from './login/login.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AuthModule } from '@auth0/auth0-angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,9 +50,14 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatInputModule,
     MatPaginatorModule,
     MatBadgeModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
     MatSnackBarModule,
+    AuthModule.forRoot({
+      domain: 'dev-itutlm5aikkf4b3d.us.auth0.com',
+      clientId: 'VtDbphClQHGe7Tie1oKSK6HtRM1Wl08S',
+      authorizationParams: {
+        redirect_uri: 'http://localhost:4200/home',
+      },
+    }),
   ],
   providers: [CartService],
   bootstrap: [AppComponent],

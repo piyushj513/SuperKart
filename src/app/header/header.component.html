@@ -7,13 +7,8 @@
     <button matBadge="{{ cartSize }}" mat-button routerLink="/cart">
       Cart
     </button>
-    <button
-      mat-raised-button
-      class="btn"
-      color="warn"
-      (click)="authService.logout()"
-    >
-      Logout
+    <button mat-raised-button color="warn" class="btn" (click)="logout()">
+      Log out
     </button>
   </mat-toolbar-row>
 </mat-toolbar>

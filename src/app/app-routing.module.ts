@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
   {
     path: '',
     component: HeaderComponent,
@@ -21,7 +22,6 @@ const routes: Routes = [
       { path: 'checkout', component: CheckoutComponent },
     ],
   },
-  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({

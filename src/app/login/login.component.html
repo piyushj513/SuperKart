@@ -4,15 +4,11 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="login-container">
-  <mat-card class="login-card">
-    <img
-      src="https://th.bing.com/th/id/OIP.iQ53vCLA0AZf7kmYZEKWVAHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7"
-      width="30%"
-    />
+  <div class="login-card">
     <mat-card-content>
-      <button mat-raised-button (click)="authService.GoogleAuth()">
-        <mat-icon class="google-icon">google</mat-icon> Login with Google
+      <button class="btn" mat-raised-button (click)="login()">
+        Login
       </button>
     </mat-card-content>
-  </mat-card>
+  </div>
 </div>
