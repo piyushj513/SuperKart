@@ -7,12 +7,15 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login' ,pathMatch:'full'},
   { path: 'login', component: LoginComponent },
   {
     path: '',
     component: HeaderComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },

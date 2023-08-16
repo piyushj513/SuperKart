@@ -55,7 +55,7 @@ import { AuthModule } from '@auth0/auth0-angular';
       domain: 'dev-itutlm5aikkf4b3d.us.auth0.com',
       clientId: 'VtDbphClQHGe7Tie1oKSK6HtRM1Wl08S',
       authorizationParams: {
-        redirect_uri: 'http://localhost:4200/home',
+        redirect_uri: 'https://main--shimmering-scone-1ed56b.netlify.app/',
       },
     }),
   ],

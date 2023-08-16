@@ -15,6 +15,5 @@ export class HeaderComponent {
   cartSize = this.itemsInCart.length;
   logout() {
     this.auth.logout();
-    localStorage.setItem('user', 'false');
   }
 }
