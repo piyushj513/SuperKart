@@ -10,7 +10,6 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login' ,pathMatch:'full'},
   { path: 'login', component: LoginComponent },
   {
     path: '',
