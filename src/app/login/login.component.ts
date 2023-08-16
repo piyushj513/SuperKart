@@ -9,5 +9,6 @@ export class LoginComponent {
   constructor(public auth: AuthService) {}
   login() {
     this.auth.loginWithRedirect();
+    localStorage.setItem('user', 'true');
   }
 }

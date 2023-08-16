@@ -8,4 +8,8 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(private router: Router) {}
   title = 'ecommerce';
+  ngOnInit(): void {
+    if (localStorage.getItem('user') !== 'true')
+      this.router.navigate(['/login']);
+  }
 }
